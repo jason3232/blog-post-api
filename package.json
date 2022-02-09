@@ -1,0 +1,28 @@
+{
+  "name": "blog-post-api",
+  "version": "1.0.0",
+  "description": "This is a simple RESTful API for fetching blog posts",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --collect-coverage",
+    "start": "node app.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "author": "JasonTang",
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "^1.6.3",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.6"
+  },
+  "devDependencies": {
+    "jest": "^27.4.4",
+    "nock": "^13.2.1",
+    "supertest": "^6.1.6"
+  }
+}
